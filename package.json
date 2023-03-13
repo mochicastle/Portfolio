@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mochicastle/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mochicastle/Portfolio/issues"
+  },
+  "homepage": "https://github.com/mochicastle/Portfolio#readme",
+  "dependencies": {
+    "portfolio": "^0.1.0"
+  }
+}
