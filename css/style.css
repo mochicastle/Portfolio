@@ -6,6 +6,89 @@ body {
   font-weight: 400;
 }
 
+.navigation-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.navigation-items:medium {
+  background-color: white;
+}
+
+.navigation {
+  display: flex;
+  padding: 30px 50px;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logo-link {
+  z-index: 1;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.7;
+}
+
+.logo-link:small {
+  padding-left: 0px;
+}
+
+.logo-link:current {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.navigation-wrap {
+  display: flex;
+  margin-right: -20px;
+  align-items: center;
+}
+
+.navigation-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navigation-item:hover {
+  opacity: 0.9;
+}
+
+.navigation-item:active {
+  opacity: 0.8;
+}
+
+.navigation-item.w--current {
+  opacity: 1;
+  color: #1a1b1f;
+  font-weight: 600;
+}
+
+.navigation-item.w--current:hover {
+  opacity: 0.8;
+  color: #32343a;
+}
+
+.navigation-item.w--current:active {
+  opacity: 0.7;
+  color: #32343a;
+}
+
 .section {
   margin-top: 100px;
   margin-right: 30px;
@@ -18,6 +101,7 @@ body {
 }
 
 .greeting-grid {
+  height: auto;
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
