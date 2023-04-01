@@ -7,8 +7,22 @@ body {
 }
 
 .section {
+  margin-top: 100px;
   margin-right: 30px;
   margin-left: 30px;
+}
+
+.section:small {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.greeting-grid {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-rows: auto;
 }
 
 .container {
@@ -19,7 +33,6 @@ body {
 }
 
 .intro-wrap {
-  margin-top: 100px;
   margin-bottom: 140px;
 }
 
@@ -27,6 +40,13 @@ body {
   font-size: 34px;
   line-height: 34px;
   font-weight: 400;
+}
+
+.horizontal-divider {
+  width: 300px;
+  height: 1px;
+  margin-top: 15px;
+  background-color: black;
 }
 
 .heading-jumbo {
@@ -37,8 +57,35 @@ body {
   text-transform: none;
 }
 
-/* basic styles */
+.intro-pic img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 140px;
+}
 
+@media (max-width: 768px) {
+  .greeting-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.works-grid {
+  margin-bottom: 80px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-areas: "..." "...";
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  grid-template-rows: auto auto;
+}
+
+.works-grid:medium {
+  display: flex;
+}
+
+/* Coming Soon: basic styles */
 /* 100% of browser's default font size */
 /* relative unit of line height is 1.5x the font-size */
 /* box sizing tells browser how big the elements of web page are: content, margin, padding, border */
